@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(77, 76, 76)
+    background-color: rgb(36, 193, 210)
 }
 div{
     width: 100%;
@@ -8,6 +8,7 @@ div{
 }
 ul{
     display: flex;
+    flex-direction: row;
     justify-content: center;
     justify-content: space-evenly;
 }
@@ -32,9 +33,10 @@ ul li{
     font-size: 16px
 }
 
-@media screen and (max-width:1500px){
+@media screen and (max-width:500px){
     div{
         background-color: blue;
+    
     }
     #red{
         color: red;
@@ -54,7 +56,50 @@ ul li{
     }
 }
 
+@media screen and (max-width:300px){
+    div{
+        background-color: green;
+        flex-direction: column;
+    }
+    #red{
+        color: red;
+        font-size: 16px;
+    }
+    #blue{
+        color: blue;
+        font-size: 16px;
+    }
+    #green{
+        color: green;
+        font-size: 60px;
+    }
+    #yellow{
+        color: yellow;
+        font-size: 16px;
+    }
+}
 
-
+@media screen and (max-width:100px){
+    div{
+        background-color: yellow;
+        flex-direction: column;
+    }
+    #red{
+        color: red;
+        font-size: 16px;
+    }
+    #blue{
+        color: blue;
+        font-size: 16px;
+    }
+    #green{
+        color: green;
+        font-size: 16px;
+    }
+    #yellow{
+        color: yellow;
+        font-size: 60px;
+    }
+}
 
 
